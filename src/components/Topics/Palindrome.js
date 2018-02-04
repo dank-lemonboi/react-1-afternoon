@@ -10,8 +10,9 @@ class Palindrome extends Component {
     }
 
     click(prop) {
-       let str = prop.toLowerCase();
-       let revStr = prop.toLowerCase();
+        let ignore = /[\W]/g;
+       let str = prop.toLowerCase().replace(ignore, '');
+       let revStr = prop.toLowerCase().replace(ignore, '');
 
        revStr = revStr.split('').reverse().join('');
 
@@ -29,7 +30,7 @@ class Palindrome extends Component {
                 <h4>Palindrome</h4>
                 <input className="inputLine" onChange={ (e) => this.setState( {userInput: e.target.value } ) } />
                 <button className="confirmationButton" onClick={ () => this.click(this.state.userInput) }>Check for Palindrome</button>
-                <span className="resultsBox">{JSON.stringify(this.state.palindrome)}</span>
+                <span className="resultsBox"> Palindrome: {JSON.stringify(this.state.palindrome)} </span>
             </div>
         );
     }
