@@ -10,7 +10,7 @@ class Palindrome extends Component {
     }
 
     click(prop) {
-        let ignore = /[\W]/g;
+       let ignore = /[\W]/g;
        let str = prop.toLowerCase().replace(ignore, '');
        let revStr = prop.toLowerCase().replace(ignore, '');
 

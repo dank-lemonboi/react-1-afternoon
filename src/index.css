@@ -46,7 +46,7 @@ body {
 }
 
 .sumPB {
-  height: 270px;
+  height: 300px;
 }
 
  .resultsBox {
@@ -72,7 +72,7 @@ body {
 
 .inputLine {
   width: 300px;
-  height: 15px;
+  height: 18px;
   font-size: 20px;
   color: #fff;
   padding-bottom: 6px;
@@ -92,7 +92,7 @@ body {
 
 .confirmationButton {
   width: 380px;
-  height: 36px;
+  height: 30px;
   border-radius: 2px;
   background-color: #4fc3f7;
   border: none;
